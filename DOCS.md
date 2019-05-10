@@ -11,7 +11,7 @@ WIP ignore for now
 Function: `Void table.copyWithin(table,target[,start,stop])`<br>
 Purpose: Copies elements from within the array to a new position<br>
 Arguments:<br>
-`Table array` - The **sorted** table you want to modify
+`Table array` - The **sorted** table you want to modify<br>
 `Number<int> target` - The position to move the copied array elements to<br>
 Optional Arguments:<br>
 `Number<int> start` - The index to start copying elements from. The default value is 1.<br>
@@ -55,7 +55,29 @@ false
 
 ### table.fill
 Function: `None table.fill(table,value,start,stop)`<br>
-Purpose: Fills a table with a value from start to end
+Purpose: Fills a table with a value from start to end. It only fills indices were the value is not `nil` and modifies the original table.
 Arguments:<br>
-`Table array` - The **sorted** table you want to fill
-`Variant value` - The value to fill the table with
+`Table array` - The **sorted** table you want to fill<br>
+`Variant value` - The value to fill the table with<br>
+Optional Arguments:<br>
+`Number<int> start` - The index to start filling values at. The default is 0. <br>
+`Number<int> stop` - The index to stop filling values at. The default is the last index.<br>
+Example:
+```lua
+local x = {1,2,3,4,5,6,7,8,9,10}
+table.fill(x,0,5,7) --the numbers 5-7 in the table will now be 0
+table.foreach(x,print)
+```
+Output:
+```
+1 1
+2 2
+3 3
+4 4
+5 0
+6 0
+7 0
+8 8
+9 9
+10 10
+```
