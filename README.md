@@ -3,8 +3,14 @@ A module that adds many useful functions to Lua's table library
 
 ## Usage
 
-To use the library, you just have to require it at the top of your script (make sure it's in the same directory):
+File Structure:<br>
+luaproject -<br>
++-- tablelib.lua<br>
++-- script.lua<br>
+
+To use the library, you just have to require it at the top of your script (make sure it's in the same directory):<br>
 ```lua
+--File: script.lua
 require "tablelib"
 ```
 
@@ -48,3 +54,7 @@ require "tablelib"
 `table.toString`
 
 `table.unshift`
+
+## Docs
+
+Coming Soon. I should have detailed docs in the repo by tomorrow.
