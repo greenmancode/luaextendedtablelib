@@ -87,7 +87,7 @@ Output:
 
 ### table.filter
 Function: `Table table.filter(table,callback)`<br>
-Purpose: Passes the table elements into the function and if the value makes the function return true, it is inserted into the new table.
+Purpose: Passes the table elements into the function and if the value makes the function return true, it is inserted into the new table.<br>
 Arguments:<br>
 `Table array` - The **sorted** table you want to filter<br>
 `callback - function(currentValue[,index,table])` - The function that is ran for each element of the array. The function must return a boolean.<br>
@@ -110,4 +110,20 @@ Output:
 ```
 
 ### table.find
-Function: `Variant table.find(table,callback)`
+Function: `Variant table.find(table,callback)`<br>
+Purpose: Passes each element of the table into the function and returns the first value that makes the function return true. If the function doesn't return true for any of the elements, nil is returned.<br>
+Arguments:<br>
+`Table array` - The **sorted** table that you want to search<br>
+`callback - function(currentValue[,index,table])`- The function that is ran for each element of the array. The function must return a boolean.<br>
+Example:
+```lua
+local x = {1, 3, 11, 14, 19}
+print("First even number: "..table.find(x,function(val)
+	return val%2 == 0
+end))
+--tip: if the value is not a string or number, use tostring
+```
+Output:
+```
+First even number: 14
+```
