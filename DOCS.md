@@ -46,7 +46,7 @@ function canVote(val) --most of the time, all you need to use is the element arg
   return val >= 18 --this condition will result in a boolean
 end
 
-print("Everyone can vote: "..tostring(table.every(ages,canVote))) --false because there are numbers less than 18 in the table --false because there are numbers less than 18 in the table
+print("Everyone can vote: "..tostring(table.every(ages,canVote))) --false because there are numbers less than 18 in the table
 ```
 Output:
 ```
