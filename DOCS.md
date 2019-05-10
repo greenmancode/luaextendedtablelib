@@ -52,3 +52,10 @@ Output:
 ```
 false
 ```
+
+### table.fill
+Function: `None table.fill(table,value,start,stop)`<br>
+Purpose: Fills a table with a value from start to end
+Arguments:<br>
+`Table array` - The **sorted** table you want to fill
+`Variant value` - The value to fill the table with
