@@ -108,3 +108,6 @@ Output:
 4 46
 5 47
 ```
+
+### table.find
+Function: `Variant table.find(table,callback)`
