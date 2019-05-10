@@ -81,3 +81,13 @@ Output:
 9 9
 10 10
 ```
+
+### table.filter
+Function: `Table table.filter(table,callback)`
+Arguments:
+`Table array` - The **sorted** table you want to filter
+`callback - function(currentValue[,index,table])` - The function that is ran for each element of the array. The function must return a boolean.
+Example:
+```lua
+--unfinished
+```
