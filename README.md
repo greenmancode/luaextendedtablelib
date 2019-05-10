@@ -14,7 +14,7 @@ To use the library, you just have to require it at the top of your script (make 
 require "tablelib"
 ```
 
-## Functions List
+## Added Functions
 `table.copyWithin`
 
 `table.every`
