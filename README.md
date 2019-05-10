@@ -1,6 +1,13 @@
 # Lua Extended Table Library
 A module that adds many useful functions to Lua's table library
 
+## Usage
+
+To use the library, you just have to require it at the top of your script (make sure it's in the same directory):
+```lua
+require "tablelib"
+```
+
 ## Functions List
 `table.copyWithin`
 
