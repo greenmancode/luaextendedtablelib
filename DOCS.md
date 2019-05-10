@@ -3,6 +3,9 @@ Written By Greenman
 
 Notice: The documentation is not finished
 
+### Quick Tip
+If the return type of a function in here is `None`, that means that the function modifies the table that was passed in.
+
 ## Functions List
 Click a function name to skip to its documentation:
 WIP ignore for now
@@ -83,11 +86,25 @@ Output:
 ```
 
 ### table.filter
-Function: `Table table.filter(table,callback)`
-Arguments:
-`Table array` - The **sorted** table you want to filter
-`callback - function(currentValue[,index,table])` - The function that is ran for each element of the array. The function must return a boolean.
+Function: `Table table.filter(table,callback)`<br>
+Purpose: Passes the table elements into the function and if the value makes the function return true, it is inserted into the new table.
+Arguments:<br>
+`Table array` - The **sorted** table you want to filter<br>
+`callback - function(currentValue[,index,table])` - The function that is ran for each element of the array. The function must return a boolean.<br>
 Example:
 ```lua
---unfinished
+local randomAges = {3, 8, 10, 14, 15, 20, 25, 34, 46, 47}
+local adults = table.filter(randomAges,function(val) --adults will contain numbers 18 or higher
+  return val >= 18
+  --breakdown: index 1 - 3 >= 18 resolves to false so 3 is not inserted into the new table
+end)
+table.foreach(adults,print)
+```
+Output:
+```
+1 20
+2 25
+3 34
+4 46
+5 47
 ```
