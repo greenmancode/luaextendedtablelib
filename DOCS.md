@@ -8,7 +8,7 @@ Click a function name to skip to its documentation:
 WIP ignore for now
 
 ### table.copyWithin
-Function: `Void table.copyWithin(target[,start,stop])`<br>
+Function: `Void table.copyWithin(table,target[,start,stop])`<br>
 Purpose: Copies elements from within the array to a new position<br>
 Arguments:<br>
 `Table array` - The **sorted** table you want to modify
@@ -30,4 +30,25 @@ Output:
 3 "Apples"
 4 "Oranges"
 5 "Kiwis"
+```
+
+### table.every
+Function: `Boolean table.every(table,callback)`<br>
+Purpose: Checks every element in the array meets a condition (which is provided by the function). If all elements meet the condition, true is returned, but if one of the elements does not meet the condition, false is returned.<br>
+Arguments:<br>
+`Table array` - The **sorted** table you want to check<br>
+`callback - function(currentValue[,index,table])` - The function that is ran for each element of the array. The function must return a boolean.<br>
+Example:
+```lua
+local ages = {10,13,16,18,20,21}
+
+function canVote(val) --most of the time, all you need to use is the element argument
+  return val >= 18 --this condition will result in a boolean
+end
+
+print("Everyone can vote: "+table.every(ages,canVote)) --false because there are numbers less than 18 in the table
+```
+Output:
+```
+false
 ```
