@@ -2,7 +2,7 @@
 Written By Greenman
 
 ### Quick Tip
-If the return type of a function in here is `None`, it means that the function modifies the table that was passed in.
+If the return type of a function in here is `Void`, it means that the function modifies the table that was passed in.
 
 ## Functions List
 Click a function name to skip to its documentation:<br>
@@ -75,7 +75,7 @@ false
 ```
 
 ### table.fill
-Function: `None table.fill(table,value,start,stop)`<br>
+Function: `Void table.fill(table,value,start,stop)`<br>
 Purpose: Fills a table with a value from start to end. It only fills indices were the value is not `nil` and modifies the original table.
 Arguments:<br>
 `Table array` - The **sorted** table you want to fill<br>
@@ -350,7 +350,7 @@ If you put the words together from right to left you get: order wrong the in are
 ```
 
 ### table.reverse
-Function: `None table.reverse(table)`<br>
+Function: `Void table.reverse(table)`<br>
 Purpose: Reverses the order of the elements in the table<br>
 Arguments:<br>
 `Table array` - The **sorted** table you want to reverse<br>
@@ -370,7 +370,7 @@ Output:
 ```
 
 ### table.shift
-Function: `None table.shift(table)`<br>
+Function: `Void table.shift(table)`<br>
 Purpose: Removes the first element of the table and shifts the remaining elements down the indices<br>
 Arguments:<br>
 `Table array` - The **sorted** table you want to remove the first element from and shift<br>
@@ -468,7 +468,7 @@ Today's lottery numbers: 21,34,17,50,42
 ```
 
 ### table.unshift
-Function: `None table.unshift(table,value1,value2, ... value_n)`<br>
+Function: `Void table.unshift(table,value1,value2, ... value_n)`<br>
 Purpose: Inserts a variable amount of elements into the beginning of the table in the order they were passed into the function<br>
 Arguments:<br>
 `Table array` - The **sorted** table to insert elements into<br>
