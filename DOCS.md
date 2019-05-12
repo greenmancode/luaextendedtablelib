@@ -8,13 +8,14 @@ If the return type of a function in here is `None`, it means that the function m
 
 ## Functions List
 Click a function name to skip to its documentation:<br>
-[copyWithin](#tablecopywithin)
-[every](#tableevery)
-[fill](#tablefill)
-[filter](#tablefilter)
-[find](#tablefind)
-[findIndex](#tablefindindex)
-[from](#tablefrom)
+[copyWithin](#tablecopywithin)<br>
+[every](#tableevery)<br>
+[fill](#tablefill)<br>
+[filter](#tablefilter)<br>
+[find](#tablefind)<br>
+[findIndex](#tablefindindex)<br>
+[from](#tablefrom)<br>
+Unfinished
 
 ### table.copyWithin
 Function: `Void table.copyWithin(table,target[,start,stop])`<br>
