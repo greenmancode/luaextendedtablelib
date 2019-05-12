@@ -4,7 +4,7 @@ Written By Greenman
 Notice: The documentation is not finished
 
 ### Quick Tip
-If the return type of a function in here is `None`, that means that the function modifies the table that was passed in.
+If the return type of a function in here is `None`, it means that the function modifies the table that was passed in.
 
 ## Functions List
 Click a function name to skip to its documentation:
