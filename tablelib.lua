@@ -166,7 +166,7 @@ end
 function table.slice(t,start,stop)
     local newt = {}
     local s1 = start or 1
-    local s2 = stop or #t
+    local s2 = stop or #t+1
     for i=s1, s2-1 do
       table.insert(newt,t[i])
     end
