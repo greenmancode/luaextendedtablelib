@@ -57,4 +57,4 @@ require "tablelib"
 
 ## Docs
 
-Coming Soon. I should have detailed docs in the repo by tomorrow.
+Click [here](https://github.com/greenmancode/luaextendedtablelib/blob/master/DOCS.md) to learn how to use each function.
