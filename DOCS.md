@@ -7,8 +7,14 @@ Notice: The documentation is not finished
 If the return type of a function in here is `None`, it means that the function modifies the table that was passed in.
 
 ## Functions List
-Click a function name to skip to its documentation:
-WIP ignore for now
+Click a function name to skip to its documentation:<br>
+[copyWithin](#tablecopywithin)
+[every](#tableevery)
+[fill](#tablefill)
+[filter](#tablefilter)
+[find](#tablefind)
+[findIndex](#tablefindindex)
+[from](#tablefrom)
 
 ### table.copyWithin
 Function: `Void table.copyWithin(table,target[,start,stop])`<br>
