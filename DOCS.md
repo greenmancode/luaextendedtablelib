@@ -127,3 +127,46 @@ Output:
 ```
 First even number: 14
 ```
+
+### table.findIndex
+Function: `Variant table.findIndex(table,callback)`<br>
+Purpose: Passes each element of the table into the function and returns the index of first value that makes the function return true. If the function doesn't return true for any of the elements, nil is returned.<br>
+Arguments:<br>
+`Table array` - The **sorted** table that you want to search<br>
+`callback - function(currentValue[,index,table])`- The function that is ran for each element of the array. The function must return a boolean.<br>
+Example:
+```lua
+local x = {1, 3, 11, 14, 19}
+print("Index of first even number: "..table.findIndex(x,function(val)
+	return val%2 == 0
+end))
+```
+Output:
+```
+Index of first even number: 4
+```
+
+### table.from
+Function: `Table table.from(string[,callback])`<br>
+Purpose: Takes a string and splits it into characters which are inserted into the table in order. If the callback is provided, each character of the string is passed into the function and the returned value will be the new value of that character.<br>
+Arguments:<br>
+`Table array` - The **sorted** table that you want to search<br>
+`String string` - The string you want to split into a table from<br>
+Optional Arguments:<br> 
+`callback - function(currentValue[,index,table])`- The function that is ran for each character of the string. The function must return a value.<br>
+Example:
+```lua
+local message = "HELLO"
+local x = table.from(message,function(c)
+    return string.lower(c) --makes every character lowercase
+end)
+table.foreach(x,print)
+```
+Output:
+```
+1   h
+2   e
+3   l
+4   l
+5   o
+```
