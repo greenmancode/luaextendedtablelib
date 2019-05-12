@@ -15,7 +15,20 @@ Click a function name to skip to its documentation:<br>
 [find](#tablefind)<br>
 [findIndex](#tablefindindex)<br>
 [from](#tablefrom)<br>
-Unfinished
+[includes](#tableincludes)<br>
+[indexOf](#tableindexof)<br>
+[join](#tablejoin)<br>
+[lastIndexOf](#tablelastindexof)<br>
+[indexOf](#tableindexof)<br>
+[map](#tablemap)<br>
+[reduce](#tablereduce)<br>
+[reduceRight](#tablereduceright)<br>
+[reverse](#tablereverse)<br>
+[shift](#tableshift)<br>
+[slice](#tableslice)<br>
+[some](#tablesome)<br>
+[toString](#tabletostring)<br>
+[unshift](#tableunshift)
 
 ### table.copyWithin
 Function: `Void table.copyWithin(table,target[,start,stop])`<br>
