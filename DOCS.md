@@ -1,8 +1,6 @@
 # Lua Extended Table Library Documentation
 Written By Greenman
 
-Notice: The documentation is not finished
-
 ### Quick Tip
 If the return type of a function in here is `None`, it means that the function modifies the table that was passed in.
 
