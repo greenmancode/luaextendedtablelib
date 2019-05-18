@@ -3,18 +3,9 @@ A module that adds many useful functions to Lua's table library
 
 ## Usage
 
-File Structure:<br>
-luaproject -<br>
-+-- tablelib.lua<br>
-+-- script.lua<br>
-
 To use the library, you just have to use any function to execute the script and place it at the top of your script (make sure it's in the same directory):<br>
 ```lua
---File: script.lua
 require("tablelib")
---Other methods:
---dofile("tablelib.lua")
---loadfile("tablelib.lua")()
 ```
 
 
