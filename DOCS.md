@@ -264,7 +264,7 @@ Arguments:<br>
 `Table array` - The **sorted** table that you want to join<br>
 `Variant value` - The element to search for in the table<br>
 Optional Arguments:<br> 
-`String separator`- The string that will separate each element of the table in the formed string<br>
+`Number<int> start`- The index in the table to start searching from. If the argument isn't provided, the search starts at index 1 in the table.<br>
 Example:
 ```lua
 local numbers = {1, 3, 11, 14, 19, 14, 15, 13}
