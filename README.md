@@ -8,6 +8,7 @@ To use the library, you just have to use any function to execute the script and 
 require("tablelib")
 ```
 
+To learn how to use each function, please read the [Wiki](https://github.com/greenmancode/luaextendedtablelib/wiki). If you prefer the old documentation, you can view it [here](https://github.com/greenmancode/docs/blob/master/%5BArchived%5D%20LETL%20Docs.md).
 
 ## Added Functions
 `table.copyWithin`
@@ -49,7 +50,3 @@ require("tablelib")
 `table.toString`
 
 `table.unshift`
-
-## Docs
-
-Click [here](https://github.com/greenmancode/luaextendedtablelib/blob/master/DOCS.md) to learn how to use each function.
