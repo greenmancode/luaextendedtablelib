@@ -106,7 +106,7 @@ function table.join(t,sep)
   for k,v in ipairs(t) do
     out = out..v..s
   end
-  out = out:sub(1,#out-1)
+  out = out:sub(1,#out-#s)
   return out
 end
 
